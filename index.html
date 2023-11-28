@@ -23,9 +23,9 @@
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  
+  <title>SAMPro3D</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,27 +52,35 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title"><img src="static/images/icon.jpg" alt="" width="100" height="60"/>&nbsp SAMPro3D: Locating SAM Prompts in 3D for Zero-Shot Scene Segmentation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://mutianxu.github.io/" target="_blank">Mutian Xu</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  Xingyilang Yin<sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                    <a href="https://lingtengqiu.github.io/" target="_blank">Lingteng Qiu</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://xueyuhanlang.github.io/" target="_blank">Yang Liu</a><sup>3</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://www.microsoft.com/en-us/research/people/xtong/" target="_blank">Xin Tong</a><sup>3</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://gaplab.cuhk.edu.cn/" target="_blank">Xiaoguang Han</a><sup>1, 2</sup><sup>†</sup></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <!-- <span class="author-block">Institution Name<br>Conferance name and year</span> -->
+                    <span class="author-block"><sup>1</sup>SSE, CUHKSZ</span>&nbsp&nbsp&nbsp
+                    <span class="author-block"><sup>2</sup>FNii, CUHKSZ</span>&nbsp&nbsp&nbsp
+                    <span class="author-block"><sup>3</sup>Microsoft Research Asia</span>
+                    <span class="eql-cntrb"><small><br><sup>†</sup>Corresponding Author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
-                      <span class="link-block">
+                      <!-- <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -80,10 +88,10 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,11 +99,11 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/GAP-LAB-CUHK-SZ/SAMPro3D" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -122,22 +130,34 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
+<!-- Teaser image-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+        <!-- Your image here -->
+        <img src="static/images/teaser.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        We introduce <b><i><font color="SlateBlue">SAMPro3D</font></i></b> for <i>zero-shot</i> 3D indoor scene segmentation.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser"> -->
+  <!-- <div class="container is-max-desktop">
+    <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
+        Your video here
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
-      </video>
       <h2 class="subtitle has-text-centered">
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -148,7 +168,9 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            We introduce SAMPro3D for zero-shot 3D indoor scene segmentation. Given the 3D point cloud and multiple posed 2D frames of 3D scenes, our approach segments 3D scenes by applying the pretrained Segment Anything Model (SAM) to 2D frames. Our key idea involves locating 3D points in scenes as natural 3D prompts to align their projected pixel prompts across frames, ensuring frame-consistency in both pixel prompts and their SAM-predicted masks.
+Moreover, we suggest filtering out low-quality 3D prompts based on feedback from all 2D frames, for enhancing segmentation quality. We also propose to consolidate different 3D prompts if they are segmenting the same object, bringing a more comprehensive segmentation. 
+Notably, our method does <b><font color="Tomato">not</font></b> require any additional training on domain-specific data, enabling us to preserve the zero-shot power of SAM. Extensive qualitative and quantitative results show that our method consistently achieves higher quality and more diverse segmentation than previous zero-shot or fully supervised approaches, and in many cases even surpasses human-level annotations.
           </p>
         </div>
       </div>
@@ -158,38 +180,103 @@
 <!-- End paper abstract -->
 
 
+<!-- Method image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <br>
+      <h2 class="title is-3">Key Idea</h2>
+        <!-- Your image here -->
+        <img src="static/images/key_idea.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        The comparison of our <b>key idea</b> and others, as well as how they impact segmentation results.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End method image -->
+
+
+<!-- Method image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <br>
+      <h2 class="title is-3">Method Overview</h2>
+        <!-- Your image here -->
+        <img src="static/images/pipeline.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        An <b>overview</b> of our framework, with a primary focus on <i>"prompt"</i>. We locate initial 3D prompts in input scenes, then project them onto 2D frames, where SAM is performed to obtain 2D segmentation masks. Later, the initial 3D prompts and their corresponding 2D masks are filtered and consolidated. Finally, we project all input points onto each segmented frame to obtain the 3D segmentation result. 
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End method image -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Animated Qualitative Comparison</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <center>
+          <video poster="" id="video1" autoplay controls muted height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/comparison_sam3d.mp4"
+            type="video/mp4">
+          </video>
+        </center>
+        </div>
+        <div class="item item-video2">
+          <center>
+          <video poster="" id="video2" autoplay controls muted height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/comparison_mask3d.mp4"
+            type="video/mp4">
+          </video>
+        </center>
+        </div>
+        <div class="item item-video3">
+          <center>
+          <video poster="" id="video3" autoplay controls muted height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/ending.mp4"
+            type="video/mp4">
+          </video>
+        </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Qualitative Comparison</h2>
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
       <div class="item">
+        <center>
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/all_results.jpg" alt="MY ALT TEXT" width="1004" height="1240"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
+          The <b>qualitative comparison</b> of our method, SAM3D ( <i>zero-shot</i> ), Mask3D ( <i>fully-supervised</i> ) and ScanNet200's <i>annotations</i>, across various scenes in the ScanNet200 validation set, from holistic to focused view.
        </h2>
+      </center>
      </div>
      <div class="item">
+      <center>
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/all_results_supple.jpg" alt="MY ALT TEXT" width="860" height="1240"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        The <b>qualitative comparison</b> of our method, SAM3D ( <i>zero-shot</i> ), Mask3D ( <i>fully-supervised</i> ) and ScanNet200's <i>annotations</i>, across various scenes in the ScanNet200 validation set, from holistic to focused view.
       </h2>
+    </center>
     </div>
   </div>
 </div>
@@ -201,66 +288,30 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
+      Paper video.
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
+            Youtube embed code here
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
 
 
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,7 +321,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
@@ -278,7 +329,12 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{xu2023sampro3d,
+        title={SAMPro3D: Locating SAM Prompts in 3D for Zero-Shot Scene Segmentation}, 
+        author={Mutian Xu and Xingyilang Yin and Lingteng Qiu and Yang Liu and Xin Tong and Xiaoguang Han},
+        year={2023},
+        journal = {arXiv preprint arXiv:xxxxxxxx}
+  }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
