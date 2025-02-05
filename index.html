@@ -53,7 +53,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <img src="static/images/icon_final.jpg" alt="" width="250" height="70"/>
-            <h1 class="title is-1 publication-title">SAMPro3D: Locating SAM Prompts in 3D for Zero-Shot Scene Segmentation</h1>
+            <h1 class="title is-1 publication-title">SAMPro3D: Locating SAM Prompts in 3D for Zero-Shot Instance Segmentation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -77,6 +77,9 @@
                     <span class="author-block"><sup>3</sup>Microsoft Research Asia</span>
                     <span class="eql-cntrb"><small><br><sup>†</sup>Corresponding Author</small></span>
                   </div>
+                  
+
+                  <br><h3 class="title is-3"><i><font color="LightSeaGreen">3DV 2025</font></i></h3>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
@@ -139,7 +142,7 @@
         <!-- Your image here -->
         <img src="static/images/teaser.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        We introduce <b><i><font color="SlateBlue">SAMPro3D</font></i></b> for <i>zero-shot</i> 3D indoor scene segmentation.
+        We introduce <b><i><font color="SlateBlue">SAMPro3D</font></i></b> for <i>zero-shot</i> 3D instance segmentation.
       </h2>
     </div>
   </div>
@@ -170,9 +173,14 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce SAMPro3D for zero-shot 3D indoor scene segmentation. Given the 3D point cloud and multiple posed 2D frames of 3D scenes, our approach segments 3D scenes by applying the pretrained Segment Anything Model (SAM) to 2D frames. Our key idea involves locating 3D points in scenes as natural 3D prompts to align their projected pixel prompts across frames, ensuring frame-consistency in both pixel prompts and their SAM-predicted masks.
-Moreover, we suggest filtering out low-quality 3D prompts based on feedback from all 2D frames, for enhancing segmentation quality. We also propose to consolidate different 3D prompts if they are segmenting the same object, bringing a more comprehensive segmentation. 
-Notably, our method does <b><font color="Tomato">not</font></b> require any additional training on domain-specific data, enabling us to preserve the zero-shot power of SAM. Extensive qualitative and quantitative results show that our method consistently achieves higher quality and more diverse segmentation than previous zero-shot or fully supervised approaches, and in many cases even surpasses human-level annotations.
+            We introduce SAMPro3D for zero-shot instance segmentation of 3D scenes. Given the 3D point cloud and multiple posed RGB-D frames of 3D scenes, 
+            our approach segments 3D instances by applying the pretrained Segment Anything Model (SAM) to 2D frames. 
+            Our key idea involves locating SAM prompts in 3D to align their projected pixel prompts across frames, ensuring the view consistency of SAM-predicted masks. 
+            Moreover, we suggest selecting prompts from the initial set guided by the information of SAM-predicted masks across all views, which enhances the overall performance. 
+            We further propose to consolidate different prompts if they are segmenting different surface parts of the same 3D instance, bringing a more comprehensive segmentation. 
+            Notably, our method does <b><font color="Tomato">not</font></b> require any additional training. 
+            Extensive experiments on diverse benchmarks show that our method achieves comparable or better performance compared to previous zero-shot or fully supervised approaches, and in many cases surpasses human annotations. 
+            Furthermore, since our fine-grained predictions often lack annotations in available datasets, we present ScanNet200-Fine50 test data which provides fine-grained annotations on 50 scenes from ScanNet200 dataset.
           </p>
         </div>
       </div>
@@ -191,7 +199,8 @@ Notably, our method does <b><font color="Tomato">not</font></b> require any addi
         <!-- Your image here -->
         <img src="static/images/key_idea.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        The comparison of our <b>key idea</b> and others, as well as how they impact segmentation results.
+        <b>The comparison of our key idea and others</b>. Our method (b) <i>locates SAM prompts in <b>3D</b></i>, which aligns pixel prompts across
+        frames, bringing the frame consistency of prompts and their masks, and can handle newly emerged instances.
       </h2>
     </div>
   </div>
@@ -208,7 +217,10 @@ Notably, our method does <b><font color="Tomato">not</font></b> require any addi
         <!-- Your image here -->
         <img src="static/images/pipeline.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        An <b>overview</b> of our framework, with a primary focus on <i>"prompt"</i>. We locate initial 3D prompts in input scenes, then project them onto 2D frames, where SAM is performed to obtain 2D segmentation masks. Later, the initial 3D prompts and their corresponding 2D masks are filtered and consolidated. Finally, we project all input points onto each segmented frame to obtain the 3D segmentation result. 
+        <b>An overview of our framework</b>, with a primary focus on <i>"<b>prompt</b>"</i>. 
+        Given 3D scene point clouds with posed RGB-D frames, we locate SAM prompts in input 3D scenes and project them onto 2D frames to obtain 2D segmentation masks. 
+        Later, the initial prompts and their masks are selected and consolidated, leveraging both multi-view and surface information. 
+        Finally, we project all input points onto each segmented frame to obtain the 3D segmentation result.
       </h2>
     </div>
   </div>
@@ -335,7 +347,7 @@ Notably, our method does <b><font color="Tomato">not</font></b> require any addi
         title={SAMPro3D: Locating SAM Prompts in 3D for Zero-Shot Scene Segmentation}, 
         author={Mutian Xu and Xingyilang Yin and Lingteng Qiu and Yang Liu and Xin Tong and Xiaoguang Han},
         year={2023},
-        journal = {arXiv preprint arXiv:2311.17707}
+        journal={arXiv preprint arXiv:2311.17707}
   }</code></pre>
     </div>
 </section>
